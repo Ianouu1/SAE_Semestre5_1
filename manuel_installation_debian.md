@@ -67,8 +67,8 @@ maintenant on peut exécuter gitea en tant que service avec la commande:
 systemctl start gitea
 ```
 
-(une fois sur http://localhost:3000/ renseigner les )
-![illustration](image.png)
+(une fois sur http://localhost:3000/ renseigner les champs correspondant)
+![illustration](ressources/IllustrationConfigurationGitea.png)
 
 ## Configuration de Gitea
 
