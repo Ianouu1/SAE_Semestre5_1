@@ -1,20 +1,24 @@
-# TP 1 : Introduction à Git 
-## ⚠️ Il faut réaliser ce TP uniquement en ligne de commande
+<div style="text-align: center;">
+    <h2>TP 1 : Introduction à Git </h2>
+    <img src="../ressources/logo_iut.png" alt="Logo IUT" style="width: 250px;"/>
+</div> 
 
-#### Question 1 : Se connecter au gitea, créer une clé SSH et récupérer les branches sur le dépôt distant.
+```
+⚠️ Il faut réaliser ce TP uniquement en ligne de commande
+```
 
-#### Question 2 : Se mettre sur la branche TP1_Calculatrice.
+* **Question 1 :** Se connecter sur gitea, (créer une clé SSH) et récupérer la branche sur le dépôt distant.
 
-#### Question 3 : Maintenant que vous avez récupéré la branche, vous allez devoir faire avancer le projet super compliqué qu'est cette calculatrice. Il vous est demandé de créer la fonction pour multiplier deux entiers.
+* **Question 2 :** Récupérer localement la branche main.
 
-* (Parler des "// TODO :" dans le code qui permet de rappeler à Git qu'il reste des trucs à faire lors de commits) 
+* **Question 3 :** Maintenant que vous avez récupéré la branche, vous allez devoir avancer sur le projet et coder la méthode pour faire une multiplication. N'oubliez pas de faire de commit les modification que vous avez fait.
 
-#### Question 4 : J'espère que vous avez su résoudre ce problème très complexe, il va falloir versionner le travail que vous venez de réaliser localement.
-* Attention, il y a des conventions à respecter. Il faut garder en tête que le message de commit peut être n'importe quoi, mais qu'il est préférable d'écrire un message clair afin de pouvoir potentiellement revenir sur des modifications plus facilement.
-#### Question 5 : La prochaine étape est de pousser code sur le dépôt distant. Vous vous en doutez que si tout le monde pousse la même branche, il y aura un problème (dans tous les cas vous ne pouvez pas le faire 😀). Donc, vous allez devoir renommer votre branche "TP1_Calculatrice_NOMDEFAMILLE_Prenom", ensuite, vous pourrez déposer votre TP.
+Petite partie "cours", Il y a des conventions à respecter. Il faut garder en tête que le message de commit peut être n'importe quoi, mais qu'il est préférable d'écrire un message clair afin de pouvoir potentiellement revenir sur des modifications plus facilement. Généralement en entreprise, on a une branche dédiée à une UserStory et on précise l'identifiant de ce dernier pour un meilleur versionnage. Dans le cadre de ce cours, les user stories seront les TPs. Ainsi, pour ce TP et les suivants, il est attendu que vous renseignez **"TP1 : Description de ce qui a été fait"** dans vos commits.
 
-#### Question 6 : 
+Il est aussi courant d'utiliser des commentaires **"# TODO :" (ou // TODO : selon le langage)** dans le code. Cette convention permet de signaler des tâches à réaliser plus tard.
+La plupart des **IDE** identifient automatiquement les **TODO** et les affichent dans une liste dédiée, ce qui aide à ne pas les oublier. Lors des commits, il est important de vérifier ces  **TODO**.
 
-# !!!!!!!! Convention de commit explique, pour ce TP1 : Ajout de .... 
+* **Question 4 :** Renommez la branche locale en "TPGit_VotreNomDeFamille"
 
-### Modification d'un commit | Amend commit | git reset | git revert (à voir pour TP1)
+* **Question 5 :** Poussez la branche locale sur le dépôt distant
+
