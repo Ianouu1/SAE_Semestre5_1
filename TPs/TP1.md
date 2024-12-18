@@ -14,3 +14,7 @@
 #### Question 5 : La prochaine étape est de pousser code sur le dépôt distant. Vous vous en doutez que si tout le monde pousse la même branche, il y aura un problème (dans tous les cas vous ne pouvez pas le faire 😀). Donc, vous allez devoir renommer votre branche "TP1_Calculatrice_NOMDEFAMILLE_Prenom", ensuite, vous pourrez déposer votre TP.
 
 #### Question 6 : 
+
+# !!!!!!!! Convention de commit explique, pour ce TP1 : Ajout de .... 
+
+### Modification d'un commit | Amend commit | git reset | git revert (à voir pour TP1)
