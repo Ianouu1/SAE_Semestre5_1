@@ -35,11 +35,11 @@ mkdir /home/git/gitea
 mv gitea /home/git/gitea
 chown git:git -R /home/git/
 ```
-après pour que ce soit un daemon il faut créer un fichier `/etc/systemd/system/gitea.service`
+après pour que ce soit un daemon il faut créer un fichier `/etc/systemd/system/gitea.service` 
 ```bash
 touch /etc/systemd/system/gitea.service
 ```
-et y copier ça, c'est un bout de code modifié trouvé sur le [Github de Gitea](https://github.com/go-gitea/gitea/blob/release/v1.22/contrib/systemd/gitea.service):
+et y copier ça, c'est un bout de code modifié trouvé sur le [Github de Gitea](https://github.com/go-gitea/gitea/blob/release/v1.22/contrib/systemd/gitea.service): 
 ```
 [Unit]
 Description=Gitea (Git with a cup of tea)
@@ -58,7 +58,7 @@ Environment=USER=git HOME=/home/git GITEA_WORK_DIR=/home/git/gitea
 [Install]
 WantedBy=multi-user.target
 ```
-il faut maintenant recharger les daemon:
+il faut maintenant recharger les daemon: 
 ```bash
 systemctl reload-daemon
 ```
@@ -68,20 +68,37 @@ systemctl start gitea
 ```
 
 (une fois sur http://localhost:3000/ renseigner les champs correspondant)
-![illustration](ressources/IllustrationConfigurationGitea.png)
+![illustration](../ressources/ConfigurationGitea.png)
 
 ## Configuration de Gitea
 
-Affin d'exécuter le script, il est nécessaire d'avoir installé `curl`:
-```bash
-apt install curl
-```
-Maintenant que Gitea est installé, le premier utilisateur créé sera l'admin.
-Une fois celui-ci créé vous pouvez exécuter le script `scripts/script_creation.sh` qui va créer les comptes utilisateurs en fonction
-d'un fichier sous format `csv` (⚠️ Attention à bien exécuter le script dans le même répertoire que celui-ci ⚠️) le fichier `csv` doit contenir ces headers :
-```csv
-login;password;email;fullname
-```
-avec login étant le numéro étudiant de l'élève
+On a le fichier `/home/git/gitea/custom/conf/app.ini`, voici un exemple avec des options par défaut
+```ini
+APP_NAME = La théière de l'IUT - B.U.Thé # Nom de l'application
 
-## Conseil concernant la sécurité
+[database]
+DB_TYPE = postgres # Base de donnée PostgreSQL
+HOST = localhost:5432 # Adresse de la base de donnée
+NAME = gitea # Nom de la base de donnée
+USER = postgres # Nom d'utilisateur qui administre la BDD
+PASSWD = monMotDePasseSuperSecret # Mot de passe de l'utilisateur qui administre la BDD
+
+[log]
+LEVEL = debug # Logs pour debuguer l'application
+
+[service]
+DISABLE_REGISTRATION = true # Si à "true" alors seul l'admin peut créer des utilisateurs
+
+[security]
+INSTALL_LOCK = true # Si à "true" la page d'installation de l'application est passée (ici on l'a mise à true pour automatiser d'autant plus la création de l'application)
+SECRET_KEY = zNfev6bUsqMhEM6AHy8xfXHPDvfkYEBhpRd1HOytelg= # Clé de chiffrement de l'application
+
+[server]
+SSH_DOMAIN = 192.168.24.146 # Adresse du service SSH
+SSH_PORT = 2222 # Port du service SSH affiché au client (quand il voudra clone un repo avec SSH par exemple)
+SSH_LISTEN_PORT = 2222 # Port du serveur SSH built-in (attention le port 22 rentre en conflit avec sshd)
+DISABLE_SSH = false # Désactive ou non les connexions SSH
+START_SSH_SERVER = true # Si activé, utilise le serveur SSH "built-in" de gitea
+```
+
+Pour chaque paramère, une description du paramètre est proposée
