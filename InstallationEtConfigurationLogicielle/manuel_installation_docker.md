@@ -1,9 +1,9 @@
 # <center> Manuel d'installation</center>
 ### <center>Guide d'installation de Gitea sur Debian en passant par docker</center>
-(**Précision :** Les commandes écrites ci-dessous sont censée être exécuter par root, d'où l'absence de `sudo`)
+(**Précision :** Les commandes écrites ci-dessous sont censées être exécutées par root, d'où l'absence de `sudo`)
 
 ## Installation de docker sur Debian
-en suivant les instructions de [docker.com](https://docs.docker.com/engine/install/debian/#install-using-the-repository) voici les deux commandes à exécuter afin d'installer docker : 
+En suivant les instructions de [docker.com](https://docs.docker.com/engine/install/debian/#install-using-the-repository) voici les deux commandes à exécuter afin d'installer docker :
 ```bash
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -25,7 +25,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 ## Installation de Gitea et PostgreSQL grâce à `docker compose`
 
-Après avoir installé docker, il y a un script bash `script_installation_docker.sh` qui automatise la création des deux containers docker et leurs déploiement (postgres et gitea). Il suffit de l'exécuter avec les commandes suivantes : 
+Après avoir installé docker, il y a un script bash `script_installation_docker.sh` qui automatise la création des deux containers docker et leurs déploiements (postgres et gitea). Il suffit de l'exécuter avec les commandes suivantes :
 ```bash
 chmod +x script_installation_docker.sh
 ./script_installation_docker.sh
@@ -33,7 +33,7 @@ chmod +x script_installation_docker.sh
 
 ## Configuration de Gitea
 
-Si nécessaire, la configuration est modifiable manuellement dans le script d'éxecution, dans la partie `docker-compose.yml` du script on injecte des variables d'environnement dans le container gitea.
+Si nécessaire, la configuration est modifiable manuellement dans le script d'éxecution, dans la partie `docker-compose.yml` du script, on injecte des variables d'environnement dans le container gitea.
 ```yml
   server:
     image: gitea/gitea:nightly
@@ -63,9 +63,9 @@ Ces variables d'environnements servent à la configuration du fichier `app.ini`
 APP_NAME= \${GITEA__global__APP_NAME} # Nom de l'application
 
 [database]
-DB_TYPE = \${GITEA__database__DB_TYPE} # Base de donnée PostgreSQL
-HOST = \${GITEA__database__HOST} # Adresse de la base de donnée (qui tourne dans un container différent)
-NAME = \${GITEA__database__NAME} # Nom de la base de donnée
+DB_TYPE = \${GITEA__database__DB_TYPE} # Base de données PostgreSQL
+HOST = \${GITEA__database__HOST} # Adresse de la base de données (qui tourne dans un container différent)
+NAME = \${GITEA__database__NAME} # Nom de la base de données
 USER = \${GITEA__database__USER} # Nom d'utilisateur qui administre la BDD
 PASSWD = \${GITEA__database__PASSWD} # Mot de passe de l'utilisateur qui administre la BDD
 
