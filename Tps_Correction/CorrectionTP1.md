@@ -50,6 +50,7 @@ Petite partie "cours", Il y a des conventions à respecter. Il faut garder en t�
 Il est aussi courant d'utiliser des commentaires **"# TODO :" (ou // TODO : selon le langage)** dans le code. Cette convention permet de signaler des tâches à réaliser plus tard.
 La plupart des **IDE** identifient automatiquement les **TODO** et les affichent dans une liste dédiée, ce qui aide à ne pas les oublier. Lors des commits, il est important de vérifier ces **TODO**.
 
+Edition du fichier main.py :
 ```
 def multiplication(a, b):
     return a * b
