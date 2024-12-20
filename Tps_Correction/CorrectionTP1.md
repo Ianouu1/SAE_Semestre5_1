@@ -30,8 +30,18 @@ Les deux clés sont liées mathématiquement, mais une clé publique ne permet p
 ### II. Initiation à Git
 * **Question 1 :** Se connecter sur gitea, (créer une clé SSH) et bifurquer (fork) la branche sur le dépôt distant de l'admin.
   * Vous avez à votre disposition une vidéo ici : [![image](../Ressources/MiniatureVideo.png)](https://www.youtube.com/watch?v=fNKjukZ7QRk)
-
+```
+git clone ssh://gitea@domain.tld:<port>/repo/my-project.git (à vérifier)
+```
+ou
+```
+git remote add origin http://<IPduGitea>:3000/<Utilisateur>/repotest.git
+```
 * **Question 2 :** Récupérer localement la branche **main**.
+```
+git pull origin main
+git checkout main 
+```
 
 * **Question 3 :** Maintenant que vous avez récupéré la branche, vous allez devoir avancer sur le projet et coder la méthode pour faire une multiplication. N'oubliez pas de faire de commit les modification que vous avez fait.
 
@@ -40,6 +50,26 @@ Petite partie "cours", Il y a des conventions à respecter. Il faut garder en t�
 Il est aussi courant d'utiliser des commentaires **"# TODO :" (ou // TODO : selon le langage)** dans le code. Cette convention permet de signaler des tâches à réaliser plus tard.
 La plupart des **IDE** identifient automatiquement les **TODO** et les affichent dans une liste dédiée, ce qui aide à ne pas les oublier. Lors des commits, il est important de vérifier ces **TODO**.
 
+```
+def multiplication(a, b):
+    return a * b
+```
+```
+git add main.py
+git commit m "TP1 : Ajout de la méthode multiplication(a, b)"
+```
 * **Question 4 :** Créez une branche locale à partir de **master** qui s'appelle "**TP1_VotreNomDeFamille**"
+```
+// Cette commande créé une branche uniquement
+git branch TP1_NomDeFamille
 
+ou
+
+// Cette commande créé une branche et bascule directement sur cette branche
+git checkout -b TP1_NomDeFamille
+```
 * **Question 5 :** Poussez les deux branches locales sur le dépôt distant
+```
+git push origin main
+git push origin TP1_NomDeFamille
+```
