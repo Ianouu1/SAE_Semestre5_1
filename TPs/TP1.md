@@ -31,7 +31,7 @@ Les deux clés sont liées mathématiquement, mais une clé publique ne permet p
 * **Question 1 :** Se connecter sur gitea, (créer une clé SSH) et bifurquer (fork) la branche sur le dépôt distant de l'admin.
   * Vous avez à votre disposition une vidéo ici : [![image](../Ressources/MiniatureVideo.png)](https://www.youtube.com/watch?v=fNKjukZ7QRk)
 
-* **Question 2 :** Récupérer localement la branche **main**.
+* **Question 2 :** Récupérez localement la branche **main**.
 
 * **Question 3 :** Maintenant que vous avez récupéré la branche, vous allez devoir avancer sur le projet et coder la méthode pour faire une multiplication. N'oubliez pas de faire de commit les modification que vous avez fait.
 

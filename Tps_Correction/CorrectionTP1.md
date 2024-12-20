@@ -26,7 +26,6 @@ Une clé publique est créé pour chiffrer des données et peut être partagée 
 La clé privée, gardée secrète, sert à déchiffrer les données.<br>
 Les deux clés sont liées mathématiquement, mais une clé publique ne permet pas de retrouver sa clé privée.<br>
 
-
 ### II. Initiation à Git
 * **Question 1 :** Se connecter sur gitea, (créer une clé SSH) et bifurquer (fork) la branche sur le dépôt distant de l'admin.
   * Vous avez à votre disposition une vidéo ici : [![image](../Ressources/MiniatureVideo.png)](https://www.youtube.com/watch?v=fNKjukZ7QRk)
@@ -37,7 +36,7 @@ ou
 ```
 git remote add origin http://<IPduGitea>:3000/<Utilisateur>/repotest.git
 ```
-* **Question 2 :** Récupérer localement la branche **main**.
+* **Question 2 :** Récupérez localement la branche **main**.
 ```
 git pull origin main
 git checkout main 

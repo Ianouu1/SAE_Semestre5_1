@@ -10,11 +10,11 @@ et en résolvant des conflits potentiels qui peuvent survenir. Ce TP vous permet
 avec des concepts plus avancés de gestion de versions. N'hésitez pas à avoir votre cours de côté pour réaliser ce TP. **Et n'oubliez pas de mettre en pratique ce que vous avez appris lors du TP1**.
 
 ### I. Les tags
-* **Question 1 :** Créer un tag léger nommé **v1.0** sur le dernier commit de votre dépôt.
+* **Question 1 :** Créez un tag léger nommé **v1.0** sur le dernier commit de votre dépôt.
 ```
 git tag v1.0
 ```
-* **Question 2 :** Créer un fichier **test.txt** et le commit.
+* **Question 2 :** Créez un fichier **test.txt** et le commit.
 ```
 touch test.txt # Sur linux
 echo '' > test.txt # Sur windows
@@ -25,19 +25,19 @@ echo '' > test.txt # Sur windows
 git add test.txt 
 git commit -m "TP2 : Ajout du fichier test.txt"
 ```
-* **Question 3 :** Créer un tag annoté nommé **v1.1** avec le message : "TP2 : Version avec un fichier txt"
+* **Question 3 :** Créez un tag annoté nommé **v1.1** avec le message : "TP2 : Version avec un fichier txt"
 ```
 git tag -a v1.1 -m "TP2 : Version avec un fichier txt"
 ```
-* **Question 4 :** Afficher la liste des tags de votre dépôt.
+* **Question 4 :** Affichez la liste des tags de votre dépôt.
 ```
 git tag
 ```
-* **Question 5 :** Afficher les informations détaillées du tag **v1.1**.
+* **Question 5 :** Affichez les informations détaillées du tag **v1.1**.
 ```
 git show v1.1
 ```
-* **Question 6 :** Comparer les modifications entre deux tags, **v1.0** et **v1.1**.
+* **Question 6 :** Comparez les modifications entre deux tags, **v1.0** et **v1.1**.
 ```
 git diff v1.0 v1.1
 ```
@@ -45,11 +45,11 @@ git diff v1.0 v1.1
 ```
 git log v1.0
 ```
-* **Question 8 :** Déposer le tag **v1.0** sur le dépôt distant.
+* **Question 8 :** Déposez le tag **v1.0** sur le dépôt distant.
 ```
 git push origin v1.0
  ```
-* **Question 9 :** Supprimer le fichier **test.txt** ainsi que le tag **v1.1**.
+* **Question 9 :** Supprimez le fichier **test.txt** ainsi que le tag **v1.1**.
 ```
 //Supprimer le fichier
 git rm test.txt 
