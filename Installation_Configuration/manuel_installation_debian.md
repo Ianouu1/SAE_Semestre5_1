@@ -5,7 +5,7 @@
 
 ## Installation de PostgreSQL
 
-Pour installer le serveur PostgreSQL, exécutez le script d'installation associé `postgresql_install.sh` ou exécutez les commandes suivantes :
+Pour installer le serveur PostgreSQL exécutez les commandes suivantes :
 ```bash
 apt update
 apt install postgresql-15
@@ -25,7 +25,7 @@ psql -c "CREATE DATABASE gitea;"
 ```
 ## Installation de Gitea
 
-Pour installer le serveur Gitea, exécutez le script d'installation associé `gitea_install.sh` ou exécutez les commandes suivantes :
+Pour installer le serveur Gitea exécutez les commandes suivantes :
 ```bash
 adduser git
 apt install git
