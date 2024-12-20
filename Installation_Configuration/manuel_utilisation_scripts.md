@@ -15,7 +15,7 @@ Ce script automatise l'installation ainsi que le déploiement de l'application `
 ## Le script de création de compte
 le script `scripts/script_creation.sh` qui va créer les comptes utilisateurs avec comme mot de passe azerty1234 en fonction d'un fichier sous format `csv` le fichier `csv` doit contenir ces headers :
 ```csv
-login,email,fullname
+login,email,full_name
 ```
 avec login étant le numéro étudiant de l'élève. Une fois l'élève connecté à son compte il lui sera demandé de modifier son mot de passe.
 
