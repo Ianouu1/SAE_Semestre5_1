@@ -68,7 +68,7 @@ systemctl start gitea
 ```
 
 (Une fois sur http://localhost:3000/ renseigner les champs correspondant)
-![illustration](../ressources/ConfigurationGitea.png)
+![illustration](../Ressources/ConfigurationGitea.png)
 
 ## Configuration de Gitea
 

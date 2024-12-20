@@ -1,6 +1,6 @@
 <div style="text-align: center;">
     <h2>TP 2 : Approfondissement de Git</h2>
-    <img src="../ressources/logo_iut.png" alt="Logo IUT" style="width: 250px;"/>
+    <img src="../Ressources/logo_iut.png" alt="Logo IUT" style="width: 250px;"/>
 </div>  
 
 Après avoir posé les bases lors du TP1, nous allons maintenant explorer des pratiques avancées
@@ -21,7 +21,7 @@ avec des concepts plus avancés de gestion de versions. N'hésitez pas à avoir 
 * **Question 9 :** Supprimer le fichier "test.txt" ainsi que le tag v1.1.
 
 <div style="text-align: center;">
-    <img alt="illustration de l'état du dépot git après les précédentes questions" src="../ressources/Figure1.png" style="width: 450px;"/>
+    <img alt="illustration de l'état du dépot git après les précédentes questions" src="../Ressources/Figure1.png" style="width: 450px;"/>
     <br>
     Figure 1 : Illustration de l'état du dépot git à cet instant
 </div>
@@ -44,7 +44,7 @@ avec des concepts plus avancés de gestion de versions. N'hésitez pas à avoir 
 * **Question 8 :** Déplacez-vous dans la branche principale (main/master) et fusionnez les branches **puissance** et **factorielle** (le premier merge devrait bien se passer, le deuxième aura un conflit : expliquez pourquoi il y a eu un conflit).
 
 <div style="text-align: center;">
-    <img alt="illustration de l'état du dépot git après les précédentes questions" src="../ressources/Figure2.png" style="width: 450px;"/>
+    <img alt="illustration de l'état du dépot git après les précédentes questions" src="../Ressources/Figure2.png" style="width: 450px;"/>
     <br>
     Figure 2 : Illustration de l'état du dépot git à ce moment
 </div>

@@ -5,12 +5,12 @@
 ## Prérequis
 Affin d'exécuter les scripts, il est nécessaire d'avoir installé `curl`:
 ```bash
-apt install curl# <center>Manuel d'utilisation des scripts</center>
+apt install curl# <center>Manuel d'utilisation des Scripts_Configuration</center>
 
-### <center>(⚠️ Attention à bien exécuter les scripts dans le même répertoire que le `csv` à lire ⚠️)</center>
+### <center>(⚠️ Attention à bien exécuter les Scripts_Configuration dans le même répertoire que le `csv` à lire ⚠️)</center>
 
 ## Prérequis
-Affin d'exécuter les scripts, il est nécessaire d'avoir installé `curl`:
+Affin d'exécuter les Scripts_Configuration, il est nécessaire d'avoir installé `curl`:
 ```bash
 apt install curl
 ```

@@ -1,6 +1,6 @@
 <div style="text-align: center;">
     <h2>TP 1 : Introduction à Git </h2>
-    <img src="../ressources/logo_iut.png" alt="Logo IUT" style="width: 250px;"/>
+    <img src="../Ressources/logo_iut.png" alt="Logo IUT" style="width: 250px;"/>
 </div> 
 
 ```
